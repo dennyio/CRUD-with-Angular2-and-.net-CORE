@@ -11,9 +11,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AuthGuard } from './auth.service';
 import { routes, appRoutingProviders } from './app.routes';
-//import { PushNotificationsModule } from 'angular2-notifications';
 import { SimpleNotificationsModule } from 'angular2-notifications';
-
 import { ProductList } from './components/product/product.list.component';
 import { ProductService } from './components/product/product.service';
 import { ProductForm } from './components/product/productform.component';
@@ -45,7 +43,6 @@ export const firebaseConfig = {
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
         AngularFireModule.initializeApp(firebaseConfig),
         routes,
-        //PushNotificationsModule,
         SimpleNotificationsModule.forRoot(),
         FormsModule       
     ],
