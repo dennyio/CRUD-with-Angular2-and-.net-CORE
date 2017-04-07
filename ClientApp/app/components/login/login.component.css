@@ -1,0 +1,47 @@
+#lock {
+    width: 25%;
+    margin: 1.5em auto 4em auto;
+    display: block;
+}
+
+#fb {
+    background: #3B5998 url('../../assets/images/facebook.svg') no-repeat 14px 6px;
+    background-size: 47px;
+    color: #fff;
+}
+
+#google {
+    border: 1px solid #95989A;
+    background: #fff url('../../assets/images/google_2015_logo.svg') no-repeat 25px;
+    background-size: 60px;
+}
+
+#email {
+    background: #ECECEC url('../../assets/images/mail.svg') no-repeat 25px;
+    background-size: 25px;
+}
+
+
+
+@media (max-width: 500px) {
+    #page {
+        padding: 1em;
+    }
+
+    #toolbar {
+        width: 90%;
+        margin-left: -45%;
+    }
+
+    #fb {
+        background: #3B5998;
+    }
+
+    #google {
+        background: #fff;
+    }
+
+    #email {
+        background: #ECECEC;
+    }
+}

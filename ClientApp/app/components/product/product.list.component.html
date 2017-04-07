@@ -1,0 +1,25 @@
+﻿<div class='row'>
+    <div class="panel panel-default">
+      <div class='panel-heading'>Products List</div>
+        <div class='panel-body'>
+            <table class='table table-condensed table-striped'>
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td> {{product.id}}  </td>
+                        <td> <input type="text" [(ngModel)]="product.name" name="pname" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="product.description" name="pdescription" class="form-control" /> </td>
+                        <td> <input type="button" value="update" class="btn btn-primary" (click)="onUpdate(product)" /> <input type="button" value="remove" class="btn btn-danger" (click)="onDelete(product.id)" /></td>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<simple-notifications [options]="options"></simple-notifications>
