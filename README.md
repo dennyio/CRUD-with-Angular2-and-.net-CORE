@@ -3,9 +3,17 @@ This is a basic CRUD example with Angular2, SQL Server BD and Web API.
 
 It has a basic Google Firebase authentication method and a CRUD BD operations. 
 
--You must have a Firebase project created.
+You must have a Firebase project created and set the following variable values in <app.module.ts> file:
 
--You must create the "product" table in a SQL DB.
+	export const firebaseConfig = {
+	    apiKey: '',
+	    authDomain: '',
+	    databaseURL: '',
+	    storageBucket: '',
+	    messagingSenderId: ''
+	};
+
+You must create the "product" table in a SQL DB and set the connection string.
 
 ### Script: 
 CREATE TABLE [dbo].[Product](
