@@ -29,14 +29,7 @@ namespace CRUDAngular.Controllers
             return _context.Product.ToList();
         }
 
-        //// GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        
+           
         [HttpPost]
         public string Post([FromBody] Product product)
         {
